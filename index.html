@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/286923ae95.js"></script>
+  </head>
+
+  <body class="font-sans">
+    <!-- Navbar -->
+    <header
+      class="flex items-center justify-between p-6 max-w-6xl mx-auto rounded-xl mt-6"
+    >
+      <div class="flex items-center space-x-2 text-2xl font-bold">
+        <img src="images/logo.png" alt="Logo" class="h-8 w-8 object-contain" />
+        <span class="text-gray-800">Hero</span>
+        <span class="text-orange-500">Travel</span>
+      </div>
+      <nav class="flex space-x-6 text-gray-700 font-medium">
+        <a href="#" class="text-orange-500">Home</a>
+        <a href="#">Packages</a>
+        <a href="#">Testimonial</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto rounded-xl overflow-hidden shadow-lg">
+      <div
+        class="relative bg-gray-300 h-[400px] flex items-center justify-center"
+        style="background-image: url('images/explore.png')"
+      >
+        <!-- Overlay content -->
+        <div
+          class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center px-4"
+        >
+          <h1 class="text-white text-4xl md:text-5xl font-bold mb-4">
+            Explore Your Travel
+          </h1>
+          <p class="text-gray-200 mb-6 max-w-2xl">
+            Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor
+            adipiscing. In et odio enim ac quis sapien urna eu phasellus.
+          </p>
+
+          <div class="bg-white bg-opacity-20 backdrop-blur-sm p-4 rounded-lg flex flex-wrap gap-4 items-center justify-center max-w-3xl w-full">
+            <!-- Where Go -->
+            <div class="relative w-[150px]">
+              <input type="text" placeholder="Where go"
+                class="border border-gray-300 p-3 rounded w-full text-gray-700 bg-white bg-opacity-80 placeholder-gray-500" />
+            </div>
+          
+            <!-- When -->
+            <select class="border border-gray-300 p-3 rounded w-[150px] bg-white bg-opacity-80 text-gray-600">
+              <option selected disabled>When</option>
+              <option>Pick Date</option>
+            </select>
+          
+            <!-- Select Type -->
+            <select class="border border-gray-300 p-3 rounded w-[150px] bg-white bg-opacity-80 text-gray-600">
+              <option>Select Type</option>
+            </select>
+          
+            <!-- Button with Search Icon -->
+            <button class="bg-orange-500 text-white font-semibold px-6 py-3 rounded hover:bg-orange-600 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+              </svg>
+              Find Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Our POpular-->
+    <section class="flex justify-center items-center min-h-screen">
+      <div class="max-w-6xl w-full px-6 py-12">
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <!-- Text Content -->
+          <div class="flex-1">
+            <h2 class="text-3xl font-bold mb-4">Our Popular Tours</h2>
+            <p class="text-gray-600 mb-4">
+              Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+              odio sit massa. Sodales dictumst nec nibh pellentesque.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+              <li>
+                Tempus euismod lacus mauris dignissim quis in ultrices. Magna
+                nullam odio neque diam. Sociis erat at .
+              </li>
+              <li>
+                Adipiscing ornare pellentesque mauris volutpat tortor vitae
+                platea porta lacus. Lectus suspendisse nullam.
+              </li>
+              <li>
+                Accumsan eget et turpis praesent lorem egestas enim elit
+                bibendum. Risus at in.
+              </li>
+            </ul>
+            <p class="text-gray-600 mb-6">
+              Amet consectetur. Vulputate commodo felis molestie risus ornare
+              nulla amet et. Libero commodo sagittis adipiscing quis. Habitant
+              adipiscing risus natoque aliquet. Id bibendum nunc senectus semper
+              tincidunt.
+            </p>
+            <button
+              class="bg-orange-500 text-white px-5 py-2 rounded hover:bg-orange-600 transition"
+            >
+              Read More
+            </button>
+          </div>
+
+          <!-- Image Placeholder -->
+          <div class="flex-1">
+            <img
+              src="images/popular.png"
+              alt="Popular Tour"
+              class="rounded-lg w-full object-cover h-[400px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Choose Destination-->
+    <section class="flex justify-center items-center min-h-screen bg-white">
+        <div class="w-full max-w-6xl p-4">
+          <div class="text-center mb-10">
+            <h1 class="text-3xl font-bold">Choose Your Destination</h1>
+            <p class="text-gray-500 mt-2">
+              Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+              odio sit massa. <br />
+              Sodales dictumst nec nibh pellentesque.
+            </p>
+          </div>
+      
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <!-- Maldives -->
+            <div class="relative col-span-1 sm:col-span-1 h-40 sm:h-56">
+              <img src="images/Rectangle 5.png" alt="Maldives" class="w-full h-full object-cover rounded-lg" />
+              <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 rounded-lg">
+                <span class="text-white text-lg sm:text-xl font-semibold">Maldives</span>
+              </div>
+            </div>
+      
+            <!-- Indonesia -->
+            <div class="relative col-span-1 sm:col-span-2 h-40 sm:h-56">
+              <img src="images/Rectangle 8.png" alt="Indonesia" class="w-full h-full object-cover rounded-lg" />
+              <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 rounded-lg">
+                <span class="text-white text-lg sm:text-xl font-semibold">Indonesia</span>
+              </div>
+            </div>
+      
+            <!-- Srilanka -->
+            <div class="relative h-40 sm:h-48">
+              <img src="images/Rectangle 6.png" alt="Srilanka" class="w-full h-full object-cover rounded-lg" />
+              <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 rounded-lg">
+                <span class="text-white text-lg sm:text-xl font-semibold">Srilanka</span>
+              </div>
+            </div>
+      
+            <!-- North America -->
+            <div class="relative h-40 sm:h-48">
+              <img src="images/Rectangle 7.png" alt="North America" class="w-full h-full object-cover rounded-lg" />
+              <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 rounded-lg">
+                <span class="text-white text-lg sm:text-xl font-semibold">North America</span>
+              </div>
+            </div>
+      
+            <!-- Kashmir -->
+            <div class="relative h-40 sm:h-48">
+              <img src="images/Rectangle 9.png" alt="Kashmir" class="w-full h-full object-cover rounded-lg" />
+              <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 rounded-lg">
+                <span class="text-white text-lg sm:text-xl font-semibold">Kashmir</span>
+              </div>
+            </div>
+      
+            <!-- Bangladesh -->
+            <div class="relative h-40 sm:h-48">
+              <img src="images/Rectangle 11.png" alt="Bangladesh" class="w-full h-full object-cover rounded-lg" />
+              <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 rounded-lg">
+                <span class="text-white text-lg sm:text-xl font-semibold">Bangladesh</span>
+              </div>
+            </div>
+      
+            <!-- Bandarban -->
+            <div class="relative col-span-1 sm:col-span-2 h-40 sm:h-48">
+              <img src="images/Rectangle 10.png" alt="Bandarban" class="w-full h-full object-cover rounded-lg" />
+              <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 rounded-lg">
+                <span class="text-white text-lg sm:text-xl font-semibold">Bandarban</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-center py-10">
+      <!-- Logo and Text -->
+      <div class="flex flex-col items-center space-y-4">
+        <!-- Logo + Brand -->
+        <div class="flex items-center space-x-2 text-2xl font-bold">
+          <div class="h-6 w-6 bg-gray-300 rounded-full"> <img src="images/logo.png"></div>
+          <!-- Logo placeholder -->
+          <span class="text-gray-800">Hero</span>
+          <span class="text-orange-500">Travel</span>
+        </div>
+
+        <!-- Description Text -->
+        <p class="text-gray-500 text-sm max-w-md">
+          Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae
+          blandit orci potenti vulputate. Leo erat maecenas vitae elementum
+          ultricies nullam.
+        </p>
+
+        <!-- Social Media Icons (placeholders) -->
+        <div class="flex space-x-6 text-gray-600 text-lg mt-2">
+          <!-- Twitter -->
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-square-twitter"></i>
+          </a>
+
+          <!-- Facebook -->
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <!-- GitHub -->
+          <a href="#" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="my-6 border-t border-gray-200 w-full max-w-sm mx-auto"></div>
+
+      <!-- Copyright -->
+      <p class="text-gray-500 text-sm">2017, All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
